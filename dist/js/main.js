@@ -1,0 +1,1 @@
+const menuConteudo=document.getElementById("menu");function animar(){"block"===menuConteudo.style.display?menuConteudo.style.display="none":menuConteudo.style.display="block"}
