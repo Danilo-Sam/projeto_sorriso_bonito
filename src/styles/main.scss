@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    //----------------------------------header
+    header {
+        background-color: #d15050;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+
+        img {
+            width: 113px;
+            height: 64px;
+        }
+
+//--------------------------------------------
+//-------------------------menu hamburguer
+        .hamburguer {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            align-content: space-between;
+    
+            .line {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background-color: black;
+                border-radius: 4px;
+                transition: transform .5s;
+                opacity: .25s;
+            }
+
+            .twu {
+                margin-block: 6px;
+            }
+    
+            &.active .line:nth-child(1) {
+                transform: translateY(8px) rotate(-45deg);
+            }
+    
+            &.active .line:nth-child(2) {
+                opacity: 0;
+            }
+    
+            &.active .line:nth-child(3) {
+                transform: translateY(-8px) rotate(45deg);
+            }
+        }
+
+    //---------------------------------------------------
+}
+
+//--------------------------------------------------
+section {
+
+    .img {
+        background-image: url(https://via.placeholder.com/360x569);
+        width: 100%;
+        height: 569px;
+        position: absolute;
+        top: 91px;
+    }
+
+    .img-conteudo {
+        max-width: 357px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 243px;
+        left: 50%;
+        transform: translate(-50%);
+
+        &:nth-child(2) {
+            margin: 24px 0;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        padding: 18px 24px;
+        width: 263px;
+    }
+}
+
+}
