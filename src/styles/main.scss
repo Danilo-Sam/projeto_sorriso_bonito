@@ -58,7 +58,7 @@
             cursor: pointer;
             align-content: space-between;
     
-            .hamburguer-line {
+            .hamburguer__line {
                 display: block;
                 width: 24px;
                 height: 2px;
@@ -99,7 +99,7 @@ section {
         position: relative;
     }
 
-    .img-conteudo {
+    .img__conteudo {
         max-width: 357px;
         width: 100%;
         text-align: center;
