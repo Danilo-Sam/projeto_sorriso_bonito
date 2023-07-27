@@ -1,0 +1,27 @@
+@use '../config/variaveis.scss';
+
+
+@media screen and (max-width: 767px) {
+
+    .hamburguer { //-------------------------menu hamburguer
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-content: space-between;
+    
+        .hamburguer__line {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: variaveis.$corButton;
+            border-radius: 4px;
+            transition: transform .5s;
+            opacity: .25s;
+        }
+    
+        .twu {
+            margin-block: 6px;
+        }
+    }    
+}

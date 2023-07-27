@@ -1,0 +1,56 @@
+@use '../config/variaveis.scss';
+
+@media screen and (max-width: 767px) {
+    section {
+        .img {
+            background-image: url(https://via.placeholder.com/360x569);//------------------- imagem campanha sorriso bonito
+            width: 100%;
+            height: 569px;
+            margin-top: 27px;
+            position: relative;
+        }
+    
+        .img__conteudo {  //------------------------conteúdo na imagem
+            max-width: 357px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 243px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h1 {
+                font-size: 44px;
+                line-height: 50px;
+            }
+    
+            p {
+                margin: 37px 0 34px;
+                line-height: 24px;
+                font-size: variaveis.$Textfont;
+            }
+    
+            button { //------------ botão agende sua consulta
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+
+                border-radius: 30px;
+                padding: 18px 24px;
+                width: 263px;
+                line-height: 18px;
+                gap: 8px;
+    
+                font-weight: bold;
+                font-size: 16px;
+                color: #ffffff;
+                background-color: #181616;
+            }
+        }
+    }
+}
