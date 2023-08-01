@@ -1,0 +1,80 @@
+@use 'config/variaveis.scss';
+
+
+
+.faq {
+    padding: 42px 15px;
+    background-color: variaveis.$corDeFundo;
+
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 26px;
+
+    }
+
+    &__questions {
+        &__item {
+            margin-top: 16px;
+            border: 1px solid #ADABC3;
+            border-radius: 16px ;
+            background-color: #fff;
+            padding: 16px;
+            list-style: none;
+
+            &__question {
+                font-weight: 700;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                height: 48px;
+                cursor: pointer;
+                padding-left: 55px;
+                position: relative;
+
+                &::before {
+                    content: '+';
+                    position: absolute;
+                    left: 0;
+                    height: 76%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                    font-weight: normal;
+                    border-radius: 50px;
+                    background-color: variaveis.$corDeFundo;
+                    padding: 0 9.5px 5px 9.5px;                    
+                }
+            }
+
+            &__answer {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                height: 0;
+                overflow: hidden;
+                transition: height, .7s ease;
+            }
+
+            &--is-open {
+                .faq__questions__item__question::before {
+                    content: 'x';
+                    height: 70%;
+                    background-color: #000;
+                    color: #C4C4C4;
+                    padding: 0 10px 5.5px 10px;
+                }
+
+                .faq__questions__item__answer {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    height: auto;
+                    padding-top: 16px;
+                    transition: height, .7s ease;
+                }
+            }
+        }
+    }
+}
