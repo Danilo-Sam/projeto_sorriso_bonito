@@ -1,0 +1,24 @@
+@use 'config/variaveis.scss';
+
+
+
+.sobre {
+    width: 390px;
+    height: 327px;
+    h2 {
+    
+    padding: 34px;
+    height: 41px;
+    font-weight: 700;
+    font-size: 35.53px;
+    line-height: 40.38px;
+    text-align: center;
+    }
+
+    p {
+        padding: 16px;
+        text-align: center;
+       
+    }
+   
+}

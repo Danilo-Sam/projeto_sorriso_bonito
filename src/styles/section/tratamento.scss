@@ -1,0 +1,70 @@
+@use 'config/variaveis.scss';
+
+.tratamentos {
+
+    width: 390px;
+    height: 546px;
+    background-color: variaveis.$corDeFundo;
+    display: grid;
+    gap: 40px;
+ 
+   
+
+    h2 {
+        margin-top: 33px;
+        font-weight: 700;
+        font-size: 35.53px;
+        line-height: 40.38px;
+        text-align: center;
+    }
+    
+    .card {
+        display: grid;
+        gap: 14px;
+        margin: auto;
+        
+
+
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+
+            img {
+                margin-right: 10px; 
+            }
+        }
+          
+        
+    }
+
+    button {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin: 0 auto;
+        
+
+        border-radius: 30px;
+        padding: 18px 24px;
+        width: 263px;
+        line-height: 18px;
+        gap: 8px;
+
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #181616;
+       
+        
+    }
+    .botao {
+        margin-bottom: 27px;
+    }
+    
+    
+}
