@@ -8,9 +8,8 @@
   padding: 48px 16px;
 
   h2 {
-    margin-top: 33px;
     font-weight: 700;
-    font-size: 35.53px;
+    font-size: 36px;
     line-height: 40.38px;
     text-align: center;
   }
@@ -44,7 +43,7 @@
         align-items: center;
 
         img {
-          width: 24px;
+          width: 18px;
         }
       }
     }
@@ -56,7 +55,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      transition: max-height 1.4s ease;
+      transition: max-height 1s ease-in-out;
     }
   }
 
@@ -73,40 +72,5 @@
     display: grid;
     gap: 14px;
     margin: auto;
-
-    li {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: 700;
-
-      img {
-        margin-right: 14px;
-      }
-    }
-  }
-
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    margin: 0 auto;
-
-    border-radius: 30px;
-    padding: 18px 24px;
-    width: 236px;
-    height: 54px;
-    line-height: 18px;
-    gap: 8px;
-
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #181616;
-  }
-  .botao {
-    margin-bottom: 27px;
   }
 }
