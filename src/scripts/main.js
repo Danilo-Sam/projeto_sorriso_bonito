@@ -32,3 +32,7 @@ faq2.forEach((faq) => {
     console.log("Hello");
   });
 });
+
+$(document).ready(function(){
+  $('#Telefone').mask('(00) 00000-0000')
+})

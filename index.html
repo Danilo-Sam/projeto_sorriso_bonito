@@ -373,6 +373,46 @@
       </div>
     </section>
 
+    <section class="formulario">
+      <div class="formulario__titulo">
+        <h2>O próximo evento será no dia 09/10</h2>
+        <p id="quant_vagas">Restam 30 vagas</p>
+        <h3>Agende já seu horário!</h3>
+        <p>*A avaliação é gratuita e será realizada no mesmo dia </p>
+      </div>
+      <div>
+        <form class="formulario__content">
+          <div class="formulario__content__menu">
+            <h4>Horários disponíveis</h4>
+              <select class="formulario__content__menu__item" id="horarios">
+                <option value="" disabled selected>Escolher o horário</option>
+                <option value="primeiroH">9:30h</option>
+                <option value="segundoH">12:30h</option>
+                <option value="terceiroH">15h</option>
+                <option value="quartoH">17h</option>
+              </select>
+              <div class="formulario__content__menu__item">
+                <h4>Nome</h4>
+                  <input type="text" placeholder="Lurdes da Silva">
+              </div>
+              <div class="formulario__content__menu__item">
+                <h4>Data de nascimento</h4>
+                  <input type="number" placeholder="10 de Agosto de 1998">
+              </div>
+              <div class="formulario__content__menu__item">
+                <h4>E-mail</h4>
+                  <input id="E-mail" type="email" placeholder="Exemplo@gmail.com">
+              </div>
+              <div class="formulario__content__menu__item">
+                <h4>Telefone</h4>
+                  <input id="Telefone" type="tel" placeholder="(11) 9980-9980">
+              </div>
+              <button class="formulario__content__menu__button" type="submit">Agendar</button>
+            </div>
+          </form>
+      </div>
+    </section>
+
     <section class="contacts" id="contacts">
       <h2>Contatos</h2>
       <div class="contacts__whatsapp">
@@ -393,7 +433,13 @@
           <img src="./dist/images/localizacao.png" alt="">
       </div>
     </section>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script src="./dist/js/main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
   </body>
 </html>
