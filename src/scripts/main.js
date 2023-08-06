@@ -32,3 +32,11 @@ faq2.forEach((faq) => {
     console.log("Hello");
   });
 });
+
+const treatment = document.querySelectorAll(".treatment__content");
+
+treatment.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("open");
+  });
+});
