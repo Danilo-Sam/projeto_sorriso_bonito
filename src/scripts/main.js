@@ -33,11 +33,9 @@ faq2.forEach((faq) => {
   });
 });
 
-<<<<<<< HEAD
 $(document).ready(function(){
   $('#Telefone').mask('(00) 00000-0000')
 })
-=======
 const treatment = document.querySelectorAll(".treatment__content");
 
 treatment.forEach((item) => {
@@ -45,4 +43,3 @@ treatment.forEach((item) => {
     item.classList.toggle("open");
   });
 });
->>>>>>> c59538743e3c9a29aef11e93375cae2204f6631d
