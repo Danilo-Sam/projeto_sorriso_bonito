@@ -36,8 +36,8 @@ faq2.forEach((faq) => {
 $(document).ready(function () {
   $("#Telefone").mask("(00) 00000-0000");
 });
-const treatment = document.querySelectorAll(".treatment__content");
 
+const treatment = document.querySelectorAll(".treatment__content");
 treatment.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("open");
