@@ -1,0 +1,32 @@
+@use '../config/variaveis.scss';
+
+
+
+
+header {
+    .flex {
+        background-color: variaveis.$menuCor;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        padding: 0 16px;
+
+        img {
+        width: 113px;
+        height: 64px;
+        }
+
+        
+
+        &__button {
+            border-radius: 50px;
+            padding: 10px 24px;
+            text-align: center;
+            border: 1px solid #000;
+            font-size: 14px;
+        }
+    }
+
+}

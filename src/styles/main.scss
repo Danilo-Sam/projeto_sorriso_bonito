@@ -1,4 +1,4 @@
-@use "header/botaoHeader";
+@use "header/header.scss";
 @use "section/sectionCampanha";
 @use "config/variaveis";
 @use "config/reset";
@@ -9,44 +9,3 @@
 @use "section/faq2.scss";
 @use "section/form.scss";
 @use "section/contacts.scss";
-
-header {
-  .flex {
-    background-color: variaveis.$menuCor;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    padding: 0 16px;
-
-    img {
-      width: 113px;
-      height: 64px;
-    }
-  }
-
-  nav {
-    //------------------------------conteúdo do menu
-    display: none;
-    transition: display 9s;
-
-    ul {
-      position: absolute;
-      background-color: variaveis.$brancoPadrao;
-      z-index: 2;
-      width: 100%;
-      padding: 15px 0px 24px;
-
-      li {
-        text-align: center;
-        font-size: 23px;
-        font-weight: bold;
-        height: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-}
