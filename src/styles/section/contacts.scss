@@ -1,0 +1,116 @@
+@use "../config/variaveis.scss";
+
+.contacts {
+    padding: 48px 16px;
+    background-color: variaveis.$corDeFundo;
+
+    &__title {
+        width: 358px;
+        height: 92px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+
+            font-family: variaveis.$fontPrincipal;
+            font-size: 36px;
+            line-height: 46px;
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+    
+
+    &__whatsapp{
+        display: flex;
+        width: 250px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px 8px 8px;
+        gap: 16px;
+        border-radius: 50px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        background: variaveis.$black;
+        color: variaveis.$brancoPadrao;
+        text-transform: none;
+
+        a {
+            color: variaveis.$brancoPadrao;
+            text-align: center;
+            text-decoration: none;
+
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: variaveis.$fontPrincipal;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 18px;
+        }
+
+        img {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: variaveis.$brancoPadrao;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        width: 358px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        padding: 16px 0 16px 0;
+        margin-bottom: 20px;
+    }
+
+    &__instagram {
+        display: flex;
+        width: 358px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        margin-bottom: 20px;
+    }
+
+    &__location {
+        width: 294px;
+        margin: 0 auto;
+
+        h2 {
+            height: 46px;
+            margin-bottom: 16px;
+            color: variaveis.$black;
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: DM Sans;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 46px;
+        }
+
+        p{
+            color: variaveis.$black;
+            text-align: center;
+            margin-bottom: 20px;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: DM Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+}

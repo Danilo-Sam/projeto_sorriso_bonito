@@ -32,3 +32,14 @@ faq2.forEach((faq) => {
         console.log("Hello");
     });
 });
+
+$(document).ready(function () {
+  $("#Telefone").mask("(00) 00000-0000");
+});
+
+const treatment = document.querySelectorAll(".treatment__content");
+treatment.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("open");
+  });
+});
