@@ -5,8 +5,7 @@ section {
   .img {
     background-image: url(https://via.placeholder.com/360x569); //------------------- imagem campanha sorriso bonito
     width: 100%;
-    height: 569px;
-    margin-top: 27px;
+    height: 618px;
     padding: 0 16px;
     position: relative;
   }
@@ -30,22 +29,21 @@ section {
       line-height: 50px;
     }
 
-    p {
+    &--informacao {
       margin: 37px 0 34px;
       line-height: 24px;
       font-size: variaveis.$Textfont;
     }
 
-    button {
-      //------------ botão agende sua consulta
+    &--button {//------------ botão agende sua consulta
       display: flex;
       align-items: center;
       justify-content: center;
       border: none;
 
-      border-radius: 30px;
-      padding: 18px 24px;
-      width: 236px;
+      border-radius: 27px;
+      padding: 10px 24px;
+      width: 358px;
       height: 54px;
       line-height: 18px;
       gap: 8px;
@@ -54,6 +52,12 @@ section {
       font-size: 16px;
       color: #ffffff;
       background-color: #181616;
+    }
+
+    &--vagas {
+      margin: 8px 0 0;
+      font-weight: 700;
+      height: 24px;
     }
   }
 }
