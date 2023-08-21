@@ -1,8 +1,35 @@
-//menu
 function animar() {
   menu = document.getElementById('menu');
   menu.classList.toggle('open-menu')
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Faq +++
 document.addEventListener("DOMContentLoaded", function () {
