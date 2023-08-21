@@ -32,20 +32,13 @@ function animar() {
 
 
 // Faq +++
-document.addEventListener("DOMContentLoaded", function () {
-  const questions = document.querySelectorAll("[data-faq-question]");
+const faq = document.querySelectorAll(".faq__questions__item");
 
-  for (let i = 0; i < questions.length; i++) {
-    questions[i].addEventListener("click", abreOuFechaResposta);
-  }
+faq.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
 });
-
-function abreOuFechaResposta(elemento) {
-  const classe = "faq__questions__item--is-open";
-  const elementoPai = elemento.target.parentNode;
-
-  elementoPai.classList.toggle(classe);
-}
 
 const faq2 = document.querySelectorAll(".faq2__container");
 

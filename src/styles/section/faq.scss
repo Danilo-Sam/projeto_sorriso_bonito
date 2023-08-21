@@ -1,54 +1,64 @@
-@use "config/variaveis.scss";
-
 .faq {
-  padding: 42px 15px;
-  background-color: variaveis.$corDeFundo;
+  padding: 80px 16px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 
-  h2 {
+  &__title {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     text-align: center;
-    padding-bottom: 26px;
+    line-height: 38px;
+    padding: 8px;
   }
-
+    
   &__questions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
     &__item {
       display: flex;
-      padding: 0 16px;
       flex-direction: column;
+      justify-content: center;
       align-items: flex-start;
       gap: 8px;
-      margin-top: 16px;
-      border: 1px solid #adabc3;
-      border-radius: 16px;
+      border: 1px solid #ADABC3;
+      border-radius: 16px ;
       background-color: #fff;
-      padding: 16px;
+      padding: 0 16px;
       list-style: none;
-      min-height: 104px;
-      justify-content: center;
+      width: 100%;
+      cursor: pointer;
 
       &__question {
         font-weight: 700;
         font-size: 18px;
         display: flex;
         align-items: center;
-        height: 48px;
-        cursor: pointer;
-        padding-left: 55px;
+        height: 104px;      
         position: relative;
+        line-height: 24px;
+        gap: 15px;
 
-        &::before {
-          content: "+";
-          position: absolute;
-          left: 0;
-          height: 76%;
+        &--icon {
+          background-color: #c4c4c4;
           display: flex;
           align-items: center;
-          font-size: 40px;
-          font-weight: normal;
-          border-radius: 50px;
-          background-color: variaveis.$corDeFundo;
-          padding: 0 9.5px 5px 9.5px;
+          justify-content: center;
+          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          padding: 10px;
+          transition-duration: 0.5s;
+          color: #000;
+  
+          .close-faq {
+            display: none;
+          }
         }
       }
 
@@ -56,30 +66,32 @@
         height: 0;
         overflow: hidden;
         transition: 0.7s ease;
-      }
-
-      &--is-open {
-        .faq__questions__item__question::before {
-          content: "\2715";
-          font-size: 13px;
-          height: 70%;
-          background-color: #000;
-          color: #c4c4c4;
-          padding: 0 10px 5.5px 10px;
-        }
-
-        .faq__questions__item__answer {
-          height: auto;
-          padding-top: 16px;
-          overflow: hidden;
-
-          p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
-          }
+        line-height: 28px;
+        margin: 0 23px;
+        
+        p {
+          font-weight: 400;
+          font-size: 16px;            
         }
       }
+    }        
+    .faq__questions__item.active{
+
+      .faq__questions__item__answer {
+        height: 150px;
+        
+      } 
+      .faq__questions__item__question--icon{
+        background-color: #000;
+        .open-faq {
+          background-color: #c4c4c4;
+          display: none;
+        }
+        .close-faq {
+          display: block;
+          rotate: 45deg;
+        }
+      }     
     }
   }
 }

@@ -15,7 +15,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.64.2"
+    "sass": "^1.66.1"
   },
   "description": ""
 }
