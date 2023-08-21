@@ -1,3 +1,9 @@
+//menu
+function animar() {
+  menu = document.getElementById('menu');
+  menu.classList.toggle('open-menu')
+}
+
 // Faq +++
 document.addEventListener("DOMContentLoaded", function () {
   const questions = document.querySelectorAll("[data-faq-question]");

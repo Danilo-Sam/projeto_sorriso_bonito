@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odonto Project</title>
     <link rel="stylesheet" href="dist/css/main.css" />
-    <!--Font do projeto-->
+    <!--project source-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,30 +18,43 @@
     <div>
       <header>
         <div class="flex">
-          <img src="./dist/images/logo.png" alt="logo Dr. lucas" />
-
-          <button class="flex__button" type="button" onclick="animar()" >
-            Contatos
-          </button>
+            <img  src="./dist/images/logo.png" alt="logo Dr. lucas" />
+    
+            <button type="button" onclick="animar()" class="hamburguer" id="btn">
+              <span class="hamburguer__line"></span>
+              <span class="hamburguer__line twu"></span>
+              <span class="hamburguer__line"></span>
+            </button>
         </div>
+  
+        <nav id="menu">
+          <ul>
+            <li onclick="scrollAnimate()">Sobre o projeto</li>
+            <li onclick="scrollAnimate()">Tratamentos oferecidos</li>
+            <li onclick="scrollAnimate()">Conheça nossos doutores</li>
+            <li onclick="scrollAnimate()">Perguntas frequentes</li>
+            <li onclick="scrollAnimate()">Entrar em contato</li>
+            <li onclick="scrollAnimate()">Localização</li>
+          </ul>
+        </nav>
       </header>
 
       <section>
         <div class="img">
-          <div class="img__conteudo">
+          <div class="img__content">
             <h1>Campanha Sorriso Bonito</h1>
-            <p class="img__conteudo--informacao">
+            <p class="img__content--informacao">
               Procedimentos odontológicos a preço 
               de custo, todo segundo sábado do mês!
             </p>
 
-            <button class="img__conteudo--button">
+            <button class="img__content--button">
               Faça sua inscrição gratuita
               <img src="./dist/images/icon/arrow-right.svg" alt="icon arrow" />
             </button>
 
-            <p class="img__conteudo--vagas">
-              Restam 30 vagas para o dia 09/10!
+            <p class="img__content--vagas">
+              Veja a agenda disponível!
             </p>
 
           </div>

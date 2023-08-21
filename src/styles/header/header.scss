@@ -2,9 +2,8 @@
 
 
 
-
 header {
-    .flex {
+        .flex {
         background-color: variaveis.$menuCor;
         height: 64px;
         display: flex;
@@ -12,21 +11,73 @@ header {
         justify-content: space-between;
         position: sticky;
         padding: 0 16px;
-
+    
         img {
-        width: 113px;
-        height: 64px;
+            width: 113px;
+            height: 64px;
+            
         }
-
-        
-
-        &__button {
-            border-radius: 50px;
-            padding: 10px 24px;
-            text-align: center;
-            border: 1px solid #000;
-            font-size: 14px;
         }
     }
 
+    nav {
+        //------------------------------conteúdo do menu
+        height: 0; 
+        opacity: 0;
+        transition: height 0.9s ease-in-out, opacity 0.9s ease-in-out;
+    
+        ul {
+            background-color: variaveis.$brancoPadrao;
+            width: 100%;
+            padding: 15px 0px 24px;
+    
+            li {
+            text-align: center;
+            font-size: 23px;
+            font-weight: bold;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
+
+.open-menu {
+    height: 424px;
+    opacity: 1;
+}
+
+/* 
+
+.rotate-in-center {
+    -webkit-animation: rotate-in-center 0.8s ;
+            animation: rotate-in-center 0.8s ;
+}
+
+@-webkit-keyframes rotate-in-center {
+0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+}
+}
+@keyframes rotate-in-center {
+0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+}
+}
+
+ */
